@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="./product.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="contain">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="color: #008ECC; font-weight: 900;" href="#">MigaMart</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contacts</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">SmartPhones</a></li>
+                      <li><a class="dropdown-item" href="#">Watches</a></li>
+                      <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+                <form id="formm" class="d-flex" role="search">
+                  <ul class="navbar-nav">
+                    <li class="nav-item ">
+                      <span class="navbar-brand nav-link me-3 p-0" id="UserName"></span>
+                    </li>
+                  </ul>
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <a href="./cart.html" class="btn btn-outline-primary" id="btnSub" type="submit">
+                    <i class="bi bi-cart" style="display: inline;"></i>
+                    Cart</a>
+                    <ul class="navbar-nav">
+                      <li class="nav-item text-danger ">
+                        <a class=" nav-link text-danger d-flex align-items-center" id="logoutBtn" href="login.html"><i class="bi-solid bi-box-arrow-left text-end text-danger fw-bolder mx-1" ></i>Logout</a>
+                      </li>
+                    </ul>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+</div>
+      <div id="successMessage" class="alert alert-success text-center" role="alert">
+        Product added to cart!
+    </div>
+    <section id="productViewDetails"></section>
+    <section class="footer mt-5" id="footer">
+      <div class="container-fluid  text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s"   style="    background-color: #008ECC;
+            color: white;">
+          <div class="container py-5" >
+              <div class="row g-5">
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">MigaMart</h5>
+                      <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                      <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                      <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                      <div class="d-flex pt-2">
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Quick Links</h5>
+                      <a class="btn btn-link text-white-50" href="">About Us</a>
+                      <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                      <a class="btn btn-link text-white-50" href="">Our Services</a>
+                      <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                      <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Photo Gallery</h5>
+                      <div class="row g-2 pt-2">
+                          <div class="col-4">
+                              <img class="img-fluid rounded bg-light p-1" src="./assets/images/property-1.jpg" alt="">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid rounded bg-light p-1" src="./assets/images/property-2.jpg" alt="">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid rounded bg-light p-1" src="./assets/images/property-3.jpg" alt="">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid rounded bg-light p-1" src="./assets/images/property-4.jpg" alt="">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid rounded bg-light p-1" src="./assets/images/property-5.jpg" alt="">
+                          </div>
+                          <div class="col-4">
+                              <img class="img-fluid rounded bg-light p-1" src="./assets/images/property-6.jpg" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <h5 class="text-white mb-4">Get in touch</h5>
+                      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                      <div class="position-relative mx-auto" style="max-width: 400px;">
+                          <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                          <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+  </section> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>

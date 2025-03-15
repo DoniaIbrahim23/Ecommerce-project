@@ -1,0 +1,337 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    --primary: #008ECC;
+    --HEading: #222222;
+    --light: #888888;
+    --border: #EDEDED;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+    font-weight: 900;
+}
+html,body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    flex: 1;
+}
+body{
+    font-family: 'ping', sans-serif; /* استخدام الخط المخصص */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px 0px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        }
+
+        nav .button{
+            padding-left: 15%;
+        }
+
+        #btnSub{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        nav .contain .navbar-nav{
+            flex-direction: row;
+            gap: 20px;
+           
+            }
+
+            #formm input:focus {
+                border: 0.1rem solid !important;
+                border-radius: 0.2rem!important;
+            }
+
+           
+            header{
+                margin-top: 5%;
+                margin-left: auto;
+            }
+
+            .slides{
+                width: 100%;
+            /* margin-left: -3.5%; */
+
+            }
+            .slide img{
+                width: 100%;
+            }
+            .buttons button{
+                color: white;
+                margin: 0rem 13rem !important;
+                margin-bottom: 13rem !important;
+                height: 10rem;
+                margin-top: 17rem !important;
+            }
+
+
+            .CradsAlign {
+                display: flex !important;
+                justify-content: center !important;
+                
+            }
+
+            #productCard{
+                border: 0.1rem black solid !important;
+                border-radius: 0.5rem !important;
+                height: 27rem;
+                width: 22rem !important;
+            }
+            #cardBtns{
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            #products img{
+                width: 100%;
+                height: 15rem;
+                object-fit: cover !important;
+            }
+            #eye{
+                font-size: 2rem;
+                color: blue;
+            }
+            #plus{
+                font-size: 1.5rem;
+                padding: 0.1rem 0.1rem !important;
+            }
+            #goTop {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: rgb(219, 68, 68);
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 50px;
+                display: none;
+                transition: opacity 0.3s ease;
+              }
+              #successMessage {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999; 
+                display: none; /* Hidden by default */
+                transition: opacity 0.5s ease-in-out;
+            }
+
+
+/* ************************************** */
+.productInCard{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+.productInCardData{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+.productInCardData p{
+    font-size: 1.5rem;
+}
+.productInCardData img{
+    width: 7rem;
+}
+.productInCardBtns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem;
+}
+.productInCardBtns p{
+    font-size: 1.5rem;
+}
+
+.btnOnCart{
+    border: 0.1rem solid black !important;
+    font-size: 1.5rem !important;
+}
+.plusBtn:hover{
+    background-color: rgb(0, 214, 0) !important;
+    color: white !important;
+}
+.minusBtn:hover{
+    background-color: rgb(235, 55, 0) !important;
+    color: white !important;
+}
+#total{
+    margin-top: 5rem;
+    color: red;
+    /* display: flex; */
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#total button{
+    width: 15rem;
+    height: 5rem;
+}
+#nothing{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    color: red;
+    font-weight: 900;
+    display: none;
+}
+#nothing button{
+    width: 20rem;
+    height: 5rem;
+}
+section{
+    flex: 1;
+}
+#shipped button{
+    margin-top: 2rem;
+}
+/* *********************************** */
+
+
+
+
+
+             .footer{
+                background-color: #008ECC !important;
+            } 
+            
+            .footer .btn.btn-social {
+                margin-right: 5px;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--HEading);
+                border: 1px solid rgba(14, 13, 13, 0.5);
+                border-radius: 35px;
+                transition: .3s;
+            }
+            
+            .footer .btn.btn-social:hover {
+                color: var(--primary);
+                border-color: var(--light);
+            }
+            
+            .footer .btn.btn-link {
+                display: block;
+                margin-bottom: 5px;
+                padding: 0;
+                text-align: left;
+                font-size: 15px;
+                font-weight: normal;
+                text-transform: capitalize;
+                transition: .3s;
+            }
+            
+            .footer .btn.btn-link::before {
+                position: relative;
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                margin-right: 10px;
+            }
+            
+            .footer .btn.btn-link:hover {
+                letter-spacing: 1px;
+                box-shadow: none;
+            }
+            
+            .footer .form-control {
+                border-color: rgba(255,255,255,0.5);
+            }
+            
+            .footer .copyright {
+                padding: 25px 0;
+                font-size: 15px;
+                border-top: 1px solid rgba(256, 256, 256, .1);
+            }
+            
+            .footer .copyright a {
+                color: var(--light);
+            }
+            
+            .footer .footer-menu a {
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid rgba(255, 255, 255, .1);
+            }
+
+
+            #imgLogin{
+                width: 80%;
+                height: 80%;
+                margin-top: 5%;
+                margin-left: 3rem;
+            }
+
+            #loginBtn{
+                background-color: #008ECC;
+            }
+
+            .category{
+                background-color: #eee;
+                width: 70%;
+                margin-top: 2rem;
+                align-items: center !important;
+                padding: 1rem;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .category button{
+                border: none;
+                align-items: center;
+            }
+
+        
+            .col {
+                display: flex;
+                justify-content: space-around; 
+                gap: 15%; 
+            }
+            
+            
+           
+            #productView{
+                display: flex !important;
+                justify-content: space-evenly;
+                gap: 10rem;
+                margin-top: 5rem;
+            }
+            #productView img{
+                width: 45rem;
+                margin-top: 1rem;
+            }
+            #details{
+                width: 28rem;
+                margin-top: 10rem;
+                
+            }
+            #details button{
+                width: 100%;
+                margin-top: 1rem;
+            }
+            .detailsAlign{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+            }
